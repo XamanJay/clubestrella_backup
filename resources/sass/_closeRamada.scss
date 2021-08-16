@@ -1,0 +1,112 @@
+#map
+{
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 60px;
+}
+
+#close-ramada
+{
+    font-family: $font-montserrat;
+    .body-ramada{
+        font-size: 19px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #facilities{
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    }
+
+    #logo{
+        width: 200px;
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+#footer
+{
+    background-color: $purple;
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    padding: 40px;
+    img{
+        width: 25px;
+        display: block;
+        margin: 0px auto;
+    }
+    p{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0px auto;
+        letter-spacing: 1px;
+        color: white;
+        font-size: 15px;
+        margin-top: 5px important;
+        margin-bottom: 5px important;
+        a{
+            color: white;
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .endQuote{
+        margin-bottom: 25px;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin-top: 30px;
+        li{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(min-width:$md){
+    #map{
+        width: 700px;
+    }
+
+    #close-ramada
+    {
+        .body-ramada{
+            font-size: 25px;
+            width: 500px;
+        }
+        #facilities{
+            width: 700px;
+        }
+
+        #logo{
+            width: 200px;
+        }
+    }
+
+    #footer
+    {
+        width: 700px;
+        padding: 40px;
+        img{
+            width: 25px;
+        }
+        p{
+            width: 500px;
+            font-size: 15px;
+        }
+    }
+}

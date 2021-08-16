@@ -1,0 +1,517 @@
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    padding-bottom: 0px;
+    min-height: 100%;
+    background-image: url('img/tramado/tramado_mail.png');
+    background-size: auto;
+}
+
+@media(min-width:$md)
+{
+    body{
+        padding-bottom: 200px;
+    }
+}
+#logo_club{
+    width:70px;
+}
+
+.navbar{
+    background-color: $purple_custom !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-nav{
+    margin: 0px auto !important;
+}
+
+#select_lang{
+    background-color:  #70124C !important;
+    border-color: #70124C !important;
+}
+
+
+.py-4 {
+  //background-color: $purple;
+  background-image: url('img/tramado/tramado_mail.png');
+  background-size: auto;
+  font-family: $font-montserrat;
+}
+
+#select_lang:focus{
+    box-shadow: none !important;
+}
+
+#loginModalLabel{
+    margin: 0px auto;
+}
+
+#loginFail{
+    padding:10px;
+    margin-bottom:30px;
+    text-align:center;
+    border-radius:5px;
+    color:white;
+    width: 600px;
+}
+
+#navbarCustom{
+    margin-top: 20px !important;
+
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white !important;
+        margin-bottom: 7px;
+    }
+
+    input{
+        height: 30px !important;
+    }
+    button[type="submit"]{
+        border-width: 0px;
+        border-radius: 2px;
+        letter-spacing: 1px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: #7C1653;
+        font-weight: bolder;
+    }
+}
+
+@media(min-width:$md){
+    #navbarCustom{
+        margin-top: 0px !important;
+        li{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+#goldLogo{
+    width: 120px;
+}
+
+@media(min-width:$md){
+    #goldLogo{
+        width: 200px;
+    }
+}
+
+#textPrograma{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+@media(min-width:$md)
+{
+    #textPrograma{
+        width: 450px;
+        margin-bottom: 190px;
+    }
+}
+
+.text-socio{
+
+    width: 300px;
+    margin-bottom: 35px;
+}
+
+#socios{
+    a:hover{
+        text-decoration: none;
+        color: #7C1653;
+    }
+    a{
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 5px;
+        background-color: #D7A662;
+        font-weight: bold;
+    }
+}
+
+
+.btn-register{
+    a:focus{
+        box-shadow: none;
+    }
+}
+
+#points-client
+{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -5px;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+@media(min-width:$md){
+    #points-client{
+        margin-bottom: 10px;
+    }
+}
+
+#navbarDropdown{
+    font-size: 25px;
+}
+
+#pills-tab
+{
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
+    margin-top: -24px;
+    left: 15%;
+}
+
+@media(min-width:$md){
+    #pills-tab{
+        margin-right: 500px;
+        left: unset;
+    }
+}
+
+.quick_menu
+{
+    background-color: white;
+    color: purple;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 5px;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    
+    a{
+        color: #7C1653 !important;
+        font-weight: 600;
+    }
+
+    a:focus,a:hover
+    {
+        text-decoration: none;
+    }
+}
+
+.footer
+{
+    padding: 60px;
+    background-color: $purple_custom;
+    //background-image: url('img/tramado/tramado_mail.png');
+    font-family: $font-cinzel;
+    position: initial;
+    width: 100%;
+    bottom: 0px;
+    ul{
+        list-style: none;
+        display: inline-flex;
+        width: 100%;
+        padding-left: 0px;
+        color: white;
+    }
+}
+
+@media(min-width:$md)
+{
+    .footer{
+        position: absolute;
+    }
+}
+
+.img-Client{
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 60px;
+}
+
+.not-found{
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+$breakpoint-tablet: 768px;
+
+@media (min-width: $breakpoint-tablet) {
+    .img-Client{
+        width: 501px;
+    }
+
+    .not-found{
+        width: 350px;
+    }
+}
+
+.linkForgot
+{
+    color: white !important;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.card-reset{
+    margin-top: 50px;
+}
+
+.reset-head{
+    color: $purple;
+    background-color: $gold;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-reset{
+    background-color: $gold;
+    color: black;
+    &:hover{
+        background-color: $purple;
+        color: $gold;
+    }
+}
+
+.perfil-form{
+    background-color: #f1e8e8;
+    padding: 25px;
+    border-radius: 5px;
+    border: 3px solid $gold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    label{
+        color: $purple;
+        font-weight: 600;
+    }
+    input{
+        background-color: #f1e8e8;
+        border: 1px solid $gold;
+        &:focus{
+            border: 1px solid $purple;
+            box-shadow: 0 0 0 0.2rem #f7d3e8;
+
+        }
+    }
+
+    .select2-container--default .select2-selection--single{
+        background-color: #f1e8e8;
+        border-color: 1px solid $gold !important;
+    }
+
+    button{
+        background-color: $purple;
+        color: white;
+        border-width: 0px;
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 5px;
+        &:hover{
+            background-color: $gold;
+            color: $purple;
+        }
+    }
+}
+
+.edit-link{
+    color: white !important;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+    i{
+        color: $gold;
+    }
+}
+
+.alert-home
+{
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+#contactForm{
+    margin-top: 60px;
+    h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+div.dataTables_wrapper div.dataTables_info{
+    white-space: initial !important;
+}
+
+#map{
+    iframe{
+        width: 320px;
+        height:200px;
+        display: block;
+        margin: 0px auto;
+    }
+}
+
+@media(min-width: $md){
+    div.dataTables_wrapper div.dataTables_info{
+        white-space: nowrap !important;
+    }
+    #contactForm{
+        h2{
+            text-align: left;
+        }
+    }
+
+    #map{
+        iframe{
+            width: 400px;
+            height: 300px;
+            margin: unset;
+        }
+    }
+}
+
+#loginHome{
+    display: block;
+    padding-right: 30px;
+    li{
+        margin-bottom: 15px;
+    }
+}
+
+.header_checkout{
+    img{
+        width: 100%;
+    }
+    
+}
+
+#checkoutConfirm{
+    margin-bottom: 250px;
+    .th{
+        color: $gold !important;
+    }
+    button{
+        border-width: 0px;
+        background-color: $gold;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+    }
+    span{
+        color: $gold;
+    }
+}
+
+.img-product{
+    width: 100px;
+}
+
+.datesBox{
+    width: 100%;
+    label{
+        margin-top: 35px;
+    }
+    input{
+        border: 2px solid $gold;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width:$md){
+    #loginHome{
+        display: inline-flex;
+        padding-right: 30px;
+        li{
+            margin-bottom: 0px;
+        }
+    }
+
+    .header_checkout{
+        img{
+            width: 600px;
+        }
+    }
+
+    .datesBox{
+        width: 450px;
+    }
+
+}
+
+.cardRegister{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    border-color: $gold;
+    .card-header{
+        background-color: $gold;
+        color: $purple;
+    }
+
+    .card-body{
+        button{
+            background-color: $purple;
+            border-color: $purple;
+            color: $gold;
+        }
+    }
+
+    label{
+        color: $purple;
+    }
+}
+
+.mustInput{
+    color: red !important;
+    margin-left: 10px;
+}
+
+.failLog{
+    position: absolute;
+    bottom: 5px;
+    color: red;
+    background-color: white;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.alertStyle{
+    width: 500px;
+    text-align: center;
+    padding: 0px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+#qr-login{
+    color: $gold;
+    &:hover{
+        color: $gold;
+        text-decoration: none;
+    }
+}

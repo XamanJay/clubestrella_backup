@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+// Variables
+@import 'variables';
+// Home
+@import 'home';
+//Shuffle / reward Page
+@import 'reward';
+@import 'shuffle';
+@import 'perfil';
+@import 'datatables';
+@import 'loading';
+
+
+@import 'sweetalert2/variables.scss';
+@import 'sweetalert2/sweetalert2.scss';

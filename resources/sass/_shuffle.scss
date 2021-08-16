@@ -1,0 +1,419 @@
+figure {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif !important;
+}
+
+a {
+  text-decoration: none
+}
+
+a,
+a:visited {
+  color: #3498db
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+a:active {
+  color: #2ecc71
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.4;
+  font-family: "Cinzel", serif !important;
+}
+
+/*
+  Shuffle needs either relative or absolute positioning on the container
+  It will set it for you, but it'll cause another style recalculation and layout.
+  AKA worse performance - so just set it here
+ */
+.my-shuffle-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.my-sizer-element {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+$picture-gutter: 24px;
+$item-height: 220px;
+.picture-item {
+  height: 500px;
+  margin-top: $picture-gutter;
+}
+
+
+.picture-description
+{
+  color: white !important;
+  text-align: center;
+  a
+  {
+    color: white !important;
+  }
+}
+.item_btn{
+  width: 100%;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  letter-spacing: 3px;
+  color: #70124C !important;
+  font-weight: 600;
+}
+
+.item_btn:focus
+{
+  outline: none !important;
+}
+
+.item_points
+{
+  color: white;
+  text-align: center;
+}
+
+/*@supports (object-fit: cover) {
+  .picture-item img {
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+  }
+}*/
+
+.picture-item--h2 {
+  height: ($item-height * 2) + $picture-gutter; /* 2x the height + 1 gutter */
+}
+
+.picture-item__inner {
+  position: initial;
+  height: 100%;
+  //overflow: hidden;
+  img{
+      display: block;
+      margin: 0px auto;
+  }
+}
+
+.picture-item__details {
+  display: block;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+
+.picture-item__description {
+  width: 100%;
+  padding: 0 2em 1em 1em;
+  margin: 0;
+}
+
+.picture-item__title {
+  //flex-shrink: 0;
+  color: white;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.picture-item__tags {
+  //flex-shrink: 1;
+  text-align: right;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .picture-item--overlay {
+    .picture-item__details {
+      position: initial;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color:black;
+      backdrop-filter: blur(7px);
+      //overflow: hidden;
+    }
+
+    .picture-item__description {
+      display: none;
+    }
+    
+    a {
+      color: black;
+      text-shadow: 0 0 1px black;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .picture-item {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .picture-item__details,
+  .picture-item__description {
+    font-size: 0.875em;
+    padding: 0.625em;
+  }
+
+  .picture-item__description {
+    padding-right: 0.875em;
+    padding-bottom: 1.25em;
+  }
+
+  .picture-item--h2 {
+    height: auto;
+  }
+}
+
+// Filter styling
+// --------------
+.filter-label {
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.filters-group {
+  padding: 0;
+  margin: 0 0 4px;
+  border: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-group-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filters-group{
+    margin-top: 0px;
+  }
+}
+.btn-group:after,.btn-group:before {
+  content: " ";
+  display: table
+}
+
+.btn-group:after {
+  clear: both
+}
+
+.btn-group .btn_reward {
+  float: left;
+  border-radius: 0
+}
+
+.btn-group .btn_reward:first-child {
+  border-radius: 3px 0 0 3px
+}
+
+.btn-group .btn_reward:not(:first-child) {
+  margin-left: -1px
+}
+
+.btn-group .btn_reward:last-child {
+  border-radius: 0 3px 3px 0
+}
+
+.btn-group label.btn_reward input[type=radio] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none
+}
+
+.btn_reward {
+  display: inline-block;
+  padding: .75em .8em;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #34495e;
+  color: #34495e;
+  font-size: 1rem;
+  background-color: rgba(52,73,94,0);
+  transition: .2s ease-out;
+  cursor: pointer;
+  -webkit-appearance: none
+}
+
+@media (-moz-touch-enabled:0),(pointer: fine) {
+  .btn_reward:hover {
+    color:#fff;
+    text-decoration: none;
+    background-color: #34495e
+  }
+}
+
+.btn_reward:focus {
+  outline-width: 0;
+  box-shadow: 0 0 0 2px rgba(52,73,94,.4)
+}
+
+.btn_reward.active,.btn_reward:active {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3);
+  color: #fff;
+  background-color: #34495e
+}
+
+/*.btn_reward:focus.active {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3),0 0 0 2px rgba(52,73,94,.4)
+}*/
+
+.btn_reward:disabled {
+  cursor: not-allowed;
+  opacity: .7;
+  color: #34495e;
+  background-color: rgba(52,73,94,0)
+}
+
+.btn--primary {
+  color: #7C1653;
+  border-color: #7C1653;
+  background-color: white;
+}
+
+@media (-moz-touch-enabled:0),(pointer: fine) {
+  .btn--primary:hover {
+    background-color:#D7A662
+  }
+}
+
+/*.btn--primary:focus {
+  box-shadow: 0 0 0 2px #D7A662;
+}*/
+
+.btn--primary.active,.btn--primary:active {
+  background-color: #D7A662
+}
+
+/*.btn--primary:focus.active {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.3),0 0 0 2px#D7A662
+}*/
+
+.btn--primary:disabled {
+  color: #3498db;
+  background-color: rgba(52,152,219,0)
+}
+
+@media screen and (max-width: 767px) {
+  .btn_reward {
+    font-size:.875rem
+  }
+}
+
+// Textfield
+// ----------------
+.textfield {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #95a5a6;
+  border-radius: 4px;
+  padding: .5em;
+  font-size: 1rem;
+  color: #34495e;
+  transition: .15s
+}
+
+.textfield::-webkit-input-placeholder {
+  color: #95a5a6;
+  transition: .15s
+}
+
+.textfield:-ms-input-placeholder {
+  color: #95a5a6;
+  transition: .15s
+}
+
+.textfield::-ms-input-placeholder {
+  color: #95a5a6;
+  transition: .15s
+}
+
+.textfield::placeholder {
+  color: #95a5a6;
+  transition: .15s
+}
+
+.textfield:hover {
+  outline-width: 0;
+  color: #5d6d77;
+  border-color: #5d6d77
+}
+
+.textfield:hover::-webkit-input-placeholder {
+  color: #5d6d77
+}
+
+.textfield:hover:-ms-input-placeholder {
+  color: #5d6d77
+}
+
+.textfield:hover::-ms-input-placeholder {
+  color: #5d6d77
+}
+
+.textfield:hover::placeholder {
+  color: #5d6d77
+}
+
+.textfield:focus {
+  outline-width: 0;
+  border-color: #34495e
+}
+
+.textfield:focus::-webkit-input-placeholder {
+  color: #34495e
+}
+
+.textfield:focus:-ms-input-placeholder {
+  color: #34495e
+}
+
+.textfield:focus::-ms-input-placeholder {
+  color: #34495e
+}
+
+.textfield:focus::placeholder {
+  color: #34495e
+}
+
+
+
+
+
+
+
+/* Ensure images take up the same space when they load */
+/* https://vestride.github.io/Shuffle/images */
+.aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.aspect__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect--16x9 {
+  padding-bottom: 56.25%;
+}
+

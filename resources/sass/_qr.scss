@@ -1,0 +1,32 @@
+.alert{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+i{
+    margin-right: 10px;
+}
+form{
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+}
+
+h1{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+@media(min-width:$md){
+    .alert{
+        width: 500px;
+    }
+    form{
+        width: 500px;
+    }
+}

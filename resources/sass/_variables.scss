@@ -1,0 +1,139 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-montserrat: 'Montserrat', sans-serif !important;
+$font-cinzel: "Cinzel", serif !important;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #7C1653;
+$purple_custom:#70124C;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$gold: #D7A662;
+$gray: #c4c4cb;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.center-item{
+    display:block;
+    margin:0px auto;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.gold-title{
+    color: #D7A662;
+}
+
+.purple-T{
+    color: #7C1653 !important;
+}
+
+.cinzel-font{
+    font-family: 'Cinzel', serif !important;
+}
+
+.font-thick{
+    font-weight: 200;
+}
+
+.white-T{
+    color: white !important;
+}
+
+.margin-sides{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+@media(min-width:$md){
+    .margin-sides{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+}
+
+.margin-sx{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.margin-end{
+    margin-bottom:20px;
+}
+
+.margin-end-50{
+    margin-bottom: 50px;
+}
+
+.margin-end-80{
+    margin-bottom: 80px;
+}
+
+.margin-start-50{
+    margin-top: 50px;
+}
+
+.margin-start-60{
+    margin-top: 60px;
+}
+
+.margin-right-15{
+    margin-right: 15px;
+}
+
+.white-bg{
+    background-color: white !important;
+}
+
+.flex-center{
+    display: inline-flex;
+    align-items: center;
+}
+
+.margin-cero
+{
+    margin: 0;
+}
+
+.mobile{
+    display:block !important;
+}
+
+.desktop-flex{
+    display: none !important;
+}
+
+.desktop{
+    display: none !important;
+}
+
+@media(min-width:$md){
+    .mobile{
+        display: none !important;
+    }
+    .desktop{
+        display: initial !important;
+    }
+
+    .desktop-flex{
+        display: flex !important;
+    }
+}

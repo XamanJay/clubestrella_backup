@@ -1,0 +1,229 @@
+.center-item {
+  display: block;
+  margin: 0px auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.gold-title {
+  color: #D7A662;
+}
+
+.purple-T {
+  color: #7C1653 !important;
+}
+
+.cinzel-font {
+  font-family: "Cinzel", serif !important;
+}
+
+.font-thick {
+  font-weight: 200;
+}
+
+.white-T {
+  color: white !important;
+}
+
+.margin-sides {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .margin-sides {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px;
+  }
+}
+
+.margin-sx {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.margin-end {
+  margin-bottom: 20px;
+}
+
+.margin-end-50 {
+  margin-bottom: 50px;
+}
+
+.margin-end-80 {
+  margin-bottom: 80px;
+}
+
+.margin-start-50 {
+  margin-top: 50px;
+}
+
+.margin-start-60 {
+  margin-top: 60px;
+}
+
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+.white-bg {
+  background-color: white !important;
+}
+
+.flex-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+.margin-cero {
+  margin: 0;
+}
+
+.mobile {
+  display: block !important;
+}
+
+.desktop-flex {
+  display: none !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: initial !important;
+  }
+
+  .desktop-flex {
+    display: flex !important;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 60px;
+}
+
+#close-ramada {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#close-ramada .body-ramada {
+  font-size: 19px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#close-ramada #facilities {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+#close-ramada #logo {
+  width: 200px;
+  display: block;
+  margin: 0px auto;
+}
+
+#footer {
+  background-color: #7C1653;
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+  padding: 40px;
+}
+
+#footer img {
+  width: 25px;
+  display: block;
+  margin: 0px auto;
+}
+
+#footer p {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 15px;
+  margin-top: 5px important;
+  margin-bottom: 5px important;
+}
+
+#footer p a {
+  color: white;
+}
+
+#footer p a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .endQuote {
+  margin-bottom: 25px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+#footer ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  #map {
+    width: 700px;
+  }
+
+  #close-ramada .body-ramada {
+    font-size: 25px;
+    width: 500px;
+  }
+
+  #close-ramada #facilities {
+    width: 700px;
+  }
+
+  #close-ramada #logo {
+    width: 200px;
+  }
+
+  #footer {
+    width: 700px;
+    padding: 40px;
+  }
+
+  #footer img {
+    width: 25px;
+  }
+
+  #footer p {
+    width: 500px;
+    font-size: 15px;
+  }
+}
+
