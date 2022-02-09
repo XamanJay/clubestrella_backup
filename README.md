@@ -10,7 +10,7 @@ https://clubestrella.mx/en
 ![image](https://user-images.githubusercontent.com/47259829/153304028-8fa99cf5-8962-434f-9153-7f47aa93c7c6.png)
 
 
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
